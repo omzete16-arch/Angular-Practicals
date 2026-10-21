@@ -1,0 +1,11 @@
+<h2>My Daily Timetable</h2>
+<table border="1" cellpadding="8">
+  <tr>
+    <th>Time</th>
+    <th>Task</th>
+  </tr>
+  <tr *ngFor="let row of timetable">
+    <td>{{ row.time }}</td>
+    <td>{{ row.task }}</td>
+  </tr>
+</table>
