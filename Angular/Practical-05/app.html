@@ -1,0 +1,12 @@
+<h2>Weekly Timetable</h2>
+<table border="1" cellpadding="8">
+  <tr>
+    <th>Day</th>
+    <th *ngFor="let period of periods">{{ period }}</th>
+  </tr>
+  <tr *ngFor="let day of days; let d = index">
+    <td><b>{{ day }}</b></td>
+    <td *ngFor="let subject of timetable[d]">{{ subject }}</td>
+  </tr>
+</table>
+<p>ML = Machine Learning, FSD = Full Stack Development, SF = Spring Framework, ASD = Agile Software Development</p>
