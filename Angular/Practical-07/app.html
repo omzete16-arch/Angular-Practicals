@@ -1,0 +1,13 @@
+<h2>Student Information Form (Two-Way Data Binding)</h2>
+
+<label>Student Name:</label>
+<input type="text" [(ngModel)]="studentName" placeholder="Enter name">
+<br><br>
+
+<label>Course:</label>
+<input type="text" [(ngModel)]="course" placeholder="Enter course">
+<br><br>
+
+<h3>Live Values</h3>
+<p><b>Name:</b> {{ studentName }}</p>
+<p><b>Course:</b> {{ course }}</p>
